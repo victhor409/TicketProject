@@ -5,7 +5,7 @@ import model.dao.impl.TicketDaoJDBC;
 
 public class DaoFactory {
 
-	public static TicketDao createTicketDAO() {
+	public static TicketDao createTicketDao() {
 		return new TicketDaoJDBC(DB.getConnection());
 	}
 }

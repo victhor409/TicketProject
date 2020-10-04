@@ -8,7 +8,7 @@ import model.dao.TicketDao;
 
 public class TcketService {
 	
-	private TicketDao dao = DaoFactory.createTicketDAO();
+	private TicketDao dao = DaoFactory.createTicketDao();
 	
 	public List<Ticket>findAll(){
 		return dao.findAll();
