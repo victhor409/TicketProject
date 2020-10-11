@@ -131,9 +131,9 @@ public class TicketDaoJDBC implements TicketDao {
 				Ticket obj = new Ticket();
 				obj.setId(rs.getInt("Id"));
 				obj.setName(rs.getString("Name"));
-				obj.getClient(rs.getString("Client"));
-				obj.getCnpj(rs.getString("cnpj"));
-				obj.getEndereco(rs.getString("endereco"));
+				obj.setClient(rs.getString("Client"));
+				obj.setCnpj(rs.getString("cnpj"));
+				obj.setEndereco(rs.getString("endereco"));
 				list.add(obj);
 				
 				
